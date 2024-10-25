@@ -14,8 +14,10 @@
     if ( isset( $_POST['myVariable'] ) ){
       $myVariable = $_POST['myVariable'];
     }
-    echo "<h1>My Program</h1>\n";
-    echo "<p>My Variable is = ".$myVariable."</p>\n";
+    echo "<p>from my calculations your diameter is = " . $myVariable - 1 + 1 . "</p>\n";
+    echo "<p>your radius is = " . $myVariable / 2 . "</p>\n";
+    echo "<p>your circumference is = " . $myVariable * 3.14 * 2 . "</p>\n";
+    echo "<p>your area is = " . $myVariable * $myVariable * 3.14 . "</p>\n";
     ?>
     
   </body>
