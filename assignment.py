@@ -1,13 +1,25 @@
-Diameter = input()
-chars = set('0123456789')
-if all((c in chars) for c in Diameter):
-  Diameter = float(Diameter)
-  Radius = Dtr/2
-  Circumference = round(3.14*Rad*20)/10
-  Area = round(Rad*Rad*31.4)/10
-  print(Diameter)
-  print(Radius)
-  print(Circumference)
-  print(Area)
-else:
-    print("Invalid Character")
+# Get the diametr from the user as a string
+dStr = input("please enter diameter: ")
+
+# Convert the string to a number
+diameter = 0
+try:
+  diameter = float(dStr)
+except:
+  print("please input a positive number")
+  exit()
+
+# Checking for negative numbers 
+if diameter <= 0:
+  print("please input a positive number")
+  exit()
+
+# Doing calculations
+PI = 3.14
+radius = diameter/2 
+circumference = PI * diameter
+area = PI * (radius**2)
+
+# Printing out Area and Circumference
+print('Circumference = ', circumference)
+print('Area = ', area)
